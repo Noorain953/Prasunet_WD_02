@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch with Voice Control & Color Customization</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Stopwatch</h1>
+            <div id="display">00:00:00</div>
+            <div class="buttons">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+                <button id="lap-btn">Lap</button>
+            </div>
+            <div id="laps">
+                <ul id="lap-list"></ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Customize Colors</h2>
+            <div class="color-picker">
+                <label for="background-color">Background Color:</label>
+                <input type="color" id="background-color" value="#ffffff">
+                <label for="text-color">Text Color:</label>
+                <input type="color" id="text-color" value="#333333">
+                <label for="button-color">Button Color:</label>
+                <input type="color" id="button-color" value="#3498db">
+            </div>
+            <h2>Voice Control</h2>
+            <div class="voice-control">
+                <button id="toggle-voice-btn">Start Voice Control</button>
+                <div id="voice-status">Voice control is off</div>
+            </div>
+            <h2>Theme</h2>
+            <button id="toggle-theme-btn">Switch to Dark Mode</button>
+        </div>
+    </div>
+    <script src="scripts1.js"></script>
+</body>
+</html>

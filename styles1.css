@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.left-section {
+    max-width: 60%;
+}
+
+.right-section {
+    max-width: 35%;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#display {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.color-picker label, .color-picker input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.color-picker input {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#laps ul {
+    list-style: none;
+}
+
+#lap-list li {
+    margin: 5px 0;
+}
+
+.voice-control {
+    margin-top: 20px;
+}
+
+#toggle-voice-btn.active {
+    background-color: #2ecc71;
+}
+
+#voice-status {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.container.dark-mode {
+    background-color: #444;
+}
+
+.left-section.dark-mode, .right-section.dark-mode {
+    background-color: #555;
+    color: #f4f4f4;
+}
+
+button.dark-mode {
+    background-color: #2ecc71;
+}
